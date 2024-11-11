@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.PrimaryController" stylesheets="@styles.css" styleClass="border-pane">
+    <center>
+        <GridPane hgap="10" vgap="10">
+            <Label text="Pet Name" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            
+            <Label text="Pet Age" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="ageField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            
+            <Label text="Cost of Adoption" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="costField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        </GridPane>
+    </center>
+    <right>
+        <VBox alignment="CENTER" spacing="2" BorderPane.alignment="CENTER">
+            <ImageView fx:id="petImageView" layoutX="100" layoutY="100" fitHeight="200" fitWidth="200"/>
+        </VBox>
+    </right>
+
+    <bottom>
+        <HBox spacing="20" alignment="CENTER" BorderPane.alignment="CENTER">
+            <Button text="Next" onAction="#handleNext" fx:id="nextButton"/>
+            <Button text="Prev" onAction="#handlePrevious" fx:id="prevButton"/>
+            <Button text="New Pet" onAction="#handleNewPet" fx:id="newPetButton"/>
+            <Button text="Update" onAction="#handleUpdate" fx:id="updateButton"/>
+            <Button text="Exit" onAction="#handleExit" fx:id="exitButton"/>
+            <Button text="Delete" onAction="#handleDelete" fx:id="deleteButton"/>
+        </HBox>
+    </bottom>
+</BorderPane>
