@@ -58,6 +58,7 @@ public class NewPetController {
 
     @FXML
     private void handleCancel(ActionEvent event) {
+        //clear all fields and close the current window
     nameField.clear();
     ageField.clear();
     costField.clear();
