@@ -6,9 +6,9 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-
 import java.io.File;
 
+// bring all the necessary imports first before jumping into the class
 public class NewPetController {
     @FXML private TextField nameField;
     @FXML private TextField ageField;
