@@ -1,6 +1,6 @@
 .root {
     -fx-background-color: linear-gradient(to top, white, gray, #1b1751, #0a0645, #09053a, #030122);
-    -fx-font-family: "Agency FB", sans-serif; 
+    -fx-font-family: "Agency FB", sans-serif; /* you can change this font to any other font already installed on your computer */
 }
 
 .label {
